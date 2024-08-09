@@ -15,6 +15,7 @@ header {
     width: 80%;
     margin: 0 auto;
     padding-top: 50px;
+    padding-bottom: 67px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,4 +46,28 @@ header {
 
 .primary-btn i {
     font-size: 1rem;
+}
+
+/* banner section styling */
+.banner {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-text h2 {
+    width: 485px;
+    color: rgb(255, 255, 255);
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 80px;
+    margin-bottom: 27px;
+    margin-top: 60px;
+}
+
+.banner-img img {
+    width: 556.01px;
+    height: 438px;
+    margin-bottom: 86px;
 }
