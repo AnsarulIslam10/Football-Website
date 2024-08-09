@@ -11,7 +11,7 @@ header {
     color: white;
 }
 
-#menu {
+.menu {
     width: 30px;
     filter: invert();
     display: none;
