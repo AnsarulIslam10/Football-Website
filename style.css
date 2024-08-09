@@ -11,6 +11,12 @@ header {
     color: white;
 }
 
+#menu {
+    width: 30px;
+    filter: invert();
+    display: none;
+}
+
 .navbar {
     width: 80%;
     margin: 0 auto;
@@ -27,6 +33,15 @@ header {
     list-style: none;
     font-size: 16px;
     font-weight: 500;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    transition: all 0.2s ease;
+}
+
+.navbar ul li:hover {
+    color: aqua;
 }
 
 .primary-btn {
@@ -49,10 +64,12 @@ header {
 .primary-btn i {
     font-size: 1rem;
 }
-.primary-btn:hover{
+
+.primary-btn:hover {
     background: rgb(194, 26, 87);
-    transform: scale(1.1,1.1);
+    transform: scale(1.1, 1.1);
 }
+
 /* banner section styling */
 .banner {
     width: 80%;
@@ -118,7 +135,7 @@ header {
     width: 80%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 69px;
     margin-bottom: 170px;
@@ -155,20 +172,89 @@ footer {
     margin-bottom: 60px;
 }
 
+.footer-logo img {
+    width: 100%;
+}
+
 .social-icons {
     display: flex;
     gap: 24px;
     margin-bottom: 20px;
 }
-.social-icons img{
+
+.social-icons img {
     transition: all 0.3s ease;
     cursor: pointer;
 }
-.social-icons img:hover{
-    transform: scale(1.2,1.2);
+
+.social-icons img:hover {
+    transform: scale(1.2, 1.2);
 }
-.footer-text {
+
+.footer-text h3{
     color: rgb(0, 0, 0);
     font-size: 1.125rem;
     font-weight: 400;
+}
+
+
+/* Responsive CSS */
+@media screen and (max-width:576px) {
+    #menu {
+        display: block;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+
+    .banner {
+        flex-direction: column;
+    }
+
+    .banner-text h2 {
+        width: 278px;
+        font-size: 2.25rem;
+        line-height: 50px;
+    }
+
+    .banner-img img {
+        width: 329px;
+        height: 259.17px;
+        margin-top: 50px;
+    }
+
+    .player-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .highlights {
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+    }
+
+    .highlights-text {
+        padding: 20px;
+        margin-bottom: 29px;
+    }
+
+    .highlights-text h2 {
+        font-size: 1.87rem;
+        line-height: 40px;
+    }
+
+    .highlights-img img {
+        width: 328px;
+        height: 248px;
+        /* height: 100%; */
+        /* padding: 20px; */
+    }
+
+    .social-icons img {
+        width: 50px;
+    }
+    .footer-logo{
+        width: 300px;
+    }
 }
