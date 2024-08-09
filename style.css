@@ -71,3 +71,39 @@ header {
     height: 438px;
     margin-bottom: 86px;
 }
+
+/* player cards section styling */
+.player-cards {
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 165px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.card {
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    background: rgb(255, 255, 255);
+    padding: 15px;
+}
+
+.card img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    color: rgb(24, 25, 31);
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: rgb(108, 108, 108);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+}
