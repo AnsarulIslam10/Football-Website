@@ -42,12 +42,17 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .primary-btn i {
     font-size: 1rem;
 }
-
+.primary-btn:hover{
+    background: rgb(194, 26, 87);
+    transform: scale(1.1,1.1);
+}
 /* banner section styling */
 .banner {
     width: 80%;
@@ -138,4 +143,32 @@ header {
 .highlights-img img {
     width: 567px;
     height: 427px;
+}
+
+/* footer section styling */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 20px;
+}
+.social-icons img{
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.social-icons img:hover{
+    transform: scale(1.2,1.2);
+}
+.footer-text {
+    color: rgb(0, 0, 0);
+    font-size: 1.125rem;
+    font-weight: 400;
 }
